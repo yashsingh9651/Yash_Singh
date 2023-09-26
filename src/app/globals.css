@@ -5,7 +5,12 @@
 .hide{
   visibility: hidden;
 }
-
+.customShadow{
+  box-shadow: 0 0 35px #39CCEF;
+}
+.hoverShadow:hover{
+  box-shadow: 0 0 40px #000000;
+}
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
