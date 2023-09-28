@@ -1,3 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.glass{
+  scale: 0;
+  position: absolute;
+  top: 0;
+  inset: 0;
+  background:linear-gradient(#fff2,transparent); 
+  border: 1px solid rgba(255,255,255,0.1);
+  box-shadow: 0 15px 15px rgba(0,0,0,0.25);
+  backdrop-filter: blur(15px);
+  overflow: hidden;
+  transition: .5s;
+}
+.img{
+  transition: .5s;
+}
+.box:hover .img{
+  transform: rotate(15deg);
+}
+.box:hover .glass{
+  scale: 1;
+  z-index: 50;
+  transform: rotate(-30deg);
+}
 @media (max-width: 1280px) {
   .custom3{overflow-x: hidden;}
 }
@@ -110,6 +136,3 @@ body {
     --background-end-rgb: 0, 0, 0;
   }
 }
-@tailwind base;
-@tailwind components;
-@tailwind utilities;

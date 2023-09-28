@@ -10,6 +10,8 @@ import { AiFillInstagram, AiOutlineTwitter } from "react-icons/ai";
 import Link from "next/link";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Portfolio from "@/components/Portfolio";
+import Projects from "@/components/Projects";
+import Contact from "@/components/Contact";
 export default function Home() {
   const comp = useRef();
   const [counter, setCounter] = useState(0);
@@ -246,6 +248,10 @@ export default function Home() {
       {/* PORTFOLIO PAGE STARTS */}
       <div className="relative h-screen page2">
         <Portfolio />
+      </div>
+      <div className="page2">
+      <Projects/>
+      <Contact/>
       </div>
     </main>
   );
