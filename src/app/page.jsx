@@ -166,7 +166,7 @@ export default function Home() {
           />
           {/* Galaxy Images Ends */}
           {/* Content Box Starts */}
-          <div className="md:w-4/5 w-[96%] md:mt-40 mt-20 mx-auto relative z-50">
+          <div className="md:w-4/5 w-[96%] md:mt-40 mt-20 sm:mt-4 mx-auto relative z-50">
             {/* Type Writter Effect Starts */}
             <div className="flex uppercase text-xl md:text-4xl font-medium typed">
               <h1>i am &nbsp;</h1>
@@ -194,7 +194,7 @@ export default function Home() {
                   responsive website
                 </h1>
                 {/* Social Media Box start */}
-                <div className="flex gap-5 md:text-3xl text-white pb-10 lg:pb-0">
+                <div className="flex gap-5 md:text-3xl text-white pb-10 sm:pb-4 lg:pb-0">
                   <Link
                     target={"_blank"}
                     href="https://github.com/yashsingh9651"
@@ -230,7 +230,7 @@ export default function Home() {
               {/* Right Box Start */}
               <div>
                 <Image
-                  className="rounded-md mx-auto md:w-[450px] lg:w-[650px] customShadow"
+                  className="rounded-md mx-auto sm:w-[180px] md:w-[450px] lg:w-[650px] customShadow"
                   width={300}
                   height={300}
                   src="/yash.webp"

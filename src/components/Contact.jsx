@@ -20,7 +20,7 @@ const Contact = () => {
           const contHead = self.selector(".contHead");
           const inp = self.selector(".inp");
           const media2 = self.selector(".media2");
-          if (window.innerWidth >= 1000) {
+          if (window.innerWidth >= 1200) {
             const t5 = gsap.timeline();
             t5.from(contHead, {
               scale: 0.1,
@@ -209,7 +209,7 @@ const Contact = () => {
                   <input
                     onChange={handleChange}
                     onBlur={handleBlur}
-                    className="rounded inp text-black px-2 p-1 m-1 w-full sm:text-sm lg:text-lg"
+                    className="rounded inp text-black lg:px-2 lg:p-1 m-1 w-full text-xs lg:text-lg"
                     type="text"
                     name="name"
                     placeholder="Name"
@@ -217,7 +217,7 @@ const Contact = () => {
                     autoComplete="on"
                   />
                   {errors.name && touched.name ? (
-                    <p className="absolute top-3 right-2 text-red-600">
+                    <p className="absolute lg:top-3 top-0 right-2 text-red-600">
                       {errors.name}
                     </p>
                   ) : null}
@@ -227,7 +227,7 @@ const Contact = () => {
                   <input
                     onChange={handleChange}
                     onBlur={handleBlur}
-                    className="rounded inp text-black px-2 p-1 m-1 w-full sm:text-sm lg:text-lg"
+                    className="rounded inp text-black lg:px-2 lg:p-1 m-1 w-full text-xs lg:text-lg"
                     type="email"
                     name="email"
                     placeholder="Email"
@@ -235,7 +235,7 @@ const Contact = () => {
                     autoComplete="on"
                   />
                   {errors.email && touched.email ? (
-                    <p className="absolute top-3 right-2 text-red-600">
+                    <p className="absolute lg:top-3 top-0 right-2 text-red-600">
                       {errors.email}
                     </p>
                   ) : null}
@@ -246,20 +246,20 @@ const Contact = () => {
                     onChange={handleChange}
                     onBlur={handleBlur}
                     value={values.message}
-                    className="resize-none inp text-black rounded px-2 p-1 m-1 w-full sm:text-sm lg:text-lg sm:h-[8vw]"
+                    className="resize-none inp text-black rounded lg:px-2 lg:p-1 m-1 w-full sm:text-xs lg:text-lg sm:h-[8vw]"
                     name="message"
                     placeholder="Message"
                     autoComplete="off"
                   ></textarea>
                   {errors.message && touched.message ? (
-                    <p className="absolute top-3 right-2 text-red-600">
+                    <p className="absolute lg:top-3 top-0 right-2 text-red-600">
                       {errors.message}
                     </p>
                   ) : null}
                 </div>
                 {/* Submit Button */}
                 <input
-                  className="p-1 w-full m-1 inp rounded text-black bg-white active:scale-90 font-semibold hover:bg-[rgba(255,255,255,0.7)] sm:font-extralight sm:text-sm lg:font-bold lg:text-xl"
+                  className="lg:p-1 w-full m-1 inp rounded text-black bg-white active:scale-90 font-semibold hover:bg-[rgba(255,255,255,0.7)] sm:font-extralight sm:text-xs lg:font-bold lg:text-xl"
                   type="submit"
                   value="Send"
                 />
@@ -308,7 +308,8 @@ const Contact = () => {
               </form>
             </div>
           </div>
-          <div className="flex gap-3 text-xl md:text-3xl text-white mt-5 lg:mt-0">
+          {/* Social Media */}
+          <div className="flex gap-3 sm:hidden md:flex text-xl md:text-3xl text-white mt-5 lg:mt-0">
             <a
               target={"_blank"}
               href="https://github.com/yashsingh9651"

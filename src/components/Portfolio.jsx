@@ -20,7 +20,7 @@ const Portfolio = () => {
       const text = self.selector(".text");
       const lang = self.selector(".lang");
       const lang2 = self.selector(".lang2");
-      if (window.innerWidth >= 1000) {
+      if (window.innerWidth >= 1200) {
         const t2 = gsap.timeline();
         t2.from(yash, {
           rotation: 360,
@@ -135,7 +135,7 @@ const Portfolio = () => {
       </section>
       <div ref={page2} className="h-screen relative p-3 z-50">
         <div className="flex justify-start bg-[rgba(255,255,255,0.06)] border border-[#ffffff42] backdrop-blur rounded p-1">
-          <div className="image w-[200px] md:w-[300px]">
+          <div className="image w-[200px] sm:w-[100px] md:w-[300px]">
             <Image
               width={1000}
               height={1000}
@@ -162,15 +162,15 @@ const Portfolio = () => {
           </div>
         </div>
           {/* My Skills Section */}
-        <h1 className="flex items-center md:text-3xl md:font-medium gap-2 p-1 mt-10 md:p-2">
+        <h1 className="flex items-center sm:text-base md:text-3xl md:font-medium gap-2 p-1 mt-10 sm:mt-0 md:mt-10 md:p-2">
           <FiSettings />
           <div className={`${phudu.className}`}>My Skills</div>
         </h1>
-        <div className="w-full grid grid-cols-1 gap-2 lg:grid-cols-2 md:gap-3 text-lg">
+        <div className="w-full grid grid-cols-1 sm:grid-cols-2 gap-2 md:grid-cols-1 lg:grid-cols-2 md:gap-3 text-lg">
           {/* Language Section */}
-          <div className="bg-[rgba(255,255,255,0.06)] border border-[#ffffff42] backdrop-blur rounded p-1 text-lg md:text-xl md:p-2  ">
+          <div className="bg-[rgba(255,255,255,0.06)] border border-[#ffffff42] backdrop-blur rounded p-1 text-lg sm:text-sm md:text-xl md:p-2">
             <h1 className="md:text-2xl md:font-medium">Languages :</h1>
-            <div className="grid grid-cols-3 text-2xl md:text-3xl pt-2">
+            <div className="grid grid-cols-3 text-2xl sm:text-base md:text-3xl pt-2">
               <div className="flex items-center gap-1 lang">
                 <SiJavascript className="text-[#f0db4f] bg-[#323330]" />
                 <h1 className="text-sm md:text-xl">Java Script</h1>
@@ -186,9 +186,9 @@ const Portfolio = () => {
             </div>
           </div>
           {/* Framework Section */}
-          <div className="bg-[rgba(255,255,255,0.06)] border border-[#ffffff42] backdrop-blur rounded p-1 text-lg md:text-xl md:p-2">
+          <div className="bg-[rgba(255,255,255,0.06)] border border-[#ffffff42] backdrop-blur rounded p-1 text-lg sm:text-sm md:text-xl md:p-2">
             <h1 className="md:text-2xl md:font-medium">Frameworks :</h1>
-            <div className="grid grid-cols-3 text-3xl md:text-4xl pt-2">
+            <div className="grid grid-cols-3 text-3xl sm:text-base md:text-4xl pt-2">
               <div className="flex items-center gap-1 lang2">
                 <SiTailwindcss className="text-[#38bdf8]" />
                 <h1 className="text-sm md:text-xl">Tailwind</h1>
@@ -200,9 +200,9 @@ const Portfolio = () => {
             </div>
           </div>
           {/* Libraries Section */}
-          <div className="bg-[rgba(255,255,255,0.06)] border border-[#ffffff42] backdrop-blur rounded p-1 text-lg md:text-xl md:p-2">
+          <div className="bg-[rgba(255,255,255,0.06)] border border-[#ffffff42] backdrop-blur rounded p-1 text-lg sm:text-sm md:text-xl md:p-2">
             <h1 className="md:text-2xl md:font-medium">Libraries :</h1>
-            <div className="grid grid-cols-3 text-2xl md:text-3xl pt-2">
+            <div className="grid grid-cols-3 text-2xl md:text-3xl sm:text-base pt-2">
               <div className="flex items-center gap-1 lang">
                 <RiReactjsLine className="text-[#61dafb]" />
                 <h1 className="text-sm md:text-xl">React</h1>
@@ -214,9 +214,9 @@ const Portfolio = () => {
             </div>
           </div>
           {/* Tools Section */}
-          <div className="bg-[rgba(255,255,255,0.06)] border border-[#ffffff42] backdrop-blur rounded p-1 text-lg md:text-xl md:p-2">
+          <div className="bg-[rgba(255,255,255,0.06)] border border-[#ffffff42] backdrop-blur rounded p-1 text-lg sm:text-sm md:text-xl md:p-2">
             <h1 className="md:text-2xl md:font-medium">Tools :</h1>
-            <div className="grid grid-cols-3 text-3xl md:text-2xl pt-2">
+            <div className="grid grid-cols-3 text-3xl sm:text-base md:text-2xl pt-2">
               <div className="flex items-center gap-1 lang2">
                 <SiGithub className="text-white" />
                 <h1 className="text-sm md:text-xl">Git Hub</h1>
@@ -228,9 +228,9 @@ const Portfolio = () => {
             </div>
           </div>
           {/* Databse Section */}
-          <div className="bg-[rgba(255,255,255,0.06)] border border-[#ffffff42] backdrop-blur rounded p-1 text-lg md:text-xl md:p-2">
+          <div className="bg-[rgba(255,255,255,0.06)] border border-[#ffffff42] backdrop-blur rounded p-1 text-lg sm:text-sm md:text-xl md:p-2">
             <h1 className="md:text-2xl md:font-medium">Database :</h1>
-            <div className="grid grid-cols-3 text-3xl md:text-4xl pt-2">
+            <div className="grid grid-cols-3 text-3xl md:text-4xl pt-2 sm:text-base">
               <div className="flex items-center gap-1 lang">
                 <DiMongodb className="text-[#589636]" />
                 <h1 className="text-sm md:text-xl">Mongo DB</h1>
