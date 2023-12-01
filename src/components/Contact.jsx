@@ -333,7 +333,7 @@ const Contact = () => {
             </a>
             <a
               target={"_blank"}
-              href="https://www.instagram.com/yash27_singh/"
+              href="https://www.instagram.com/sanatani_yash_singh/"
               className="bg-[#c2c2c24a] p-1 rounded-md backdrop-blur media2"
             >
               <AiFillInstagram />

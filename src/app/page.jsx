@@ -8,7 +8,6 @@ import { BsGithub } from "react-icons/bs";
 import { ImLinkedin } from "react-icons/im";
 import { AiFillInstagram, AiOutlineTwitter } from "react-icons/ai";
 import Link from "next/link";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Portfolio from "@/components/Portfolio";
 import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
@@ -27,7 +26,6 @@ export default function Home() {
     }, 10);
   });
   useLayoutEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
     const ctx = gsap.context(() => {
       // Loading Animation...
       const t1 = gsap.timeline();
@@ -90,7 +88,6 @@ export default function Home() {
           "-=.3"
         )
         .from(".page2", { css: { display: "none" } }, "-=2");
-      // ScrollTrigger Animation...
     }, comp);
     return () => ctx.revert();
   }, []);
