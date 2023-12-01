@@ -6,7 +6,8 @@ import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { tiltPrism } from "./fonts";
 import { BsGithub } from "react-icons/bs";
 import { ImLinkedin } from "react-icons/im";
-import { AiFillInstagram, AiOutlineTwitter } from "react-icons/ai";
+import { AiFillInstagram } from "react-icons/ai";
+import { FaSquareXTwitter } from "react-icons/fa6";
 import Link from "next/link";
 import Portfolio from "@/components/Portfolio";
 import Projects from "@/components/Projects";
@@ -211,11 +212,11 @@ export default function Home() {
                     href="https://twitter.com/yash_singh9"
                     className="bg-[#c2c2c24a] p-1 rounded-md backdrop-blur media"
                   >
-                    <AiOutlineTwitter />
+                    <FaSquareXTwitter />
                   </Link>
                   <Link
                     target={"_blank"}
-                    href="https://www.instagram.com/yash27_singh/"
+                    href="https://www.instagram.com/sanatani_yash_singh/"
                     className="bg-[#c2c2c24a] p-1 rounded-md backdrop-blur media"
                   >
                     <AiFillInstagram />
