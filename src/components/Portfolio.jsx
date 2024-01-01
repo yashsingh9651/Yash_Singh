@@ -141,7 +141,7 @@ const Portfolio = () => {
               height={1000}
               alt="Yash Singh"
               className="rounded-md yash"
-              src="/yash.webp"
+              src="/full.jpg"
             />
           </div>
           <div className="px-2">
@@ -157,7 +157,7 @@ const Portfolio = () => {
               <h1 className="text">Currently Living In Greator Noida, Uttar Pradesh India.</h1> 
               <h1 className="text">Having 10 Months Of Experience In Full Stack Web Development.</h1>
               <h1 className="text">I Mostly Work With Java Script And Its Framework React Js(Next.js).</h1>
-              <h1 className="text">I Have Good Expertise In Building Great Product From Scratch.</h1>
+              <h1 className="text">I Have Good Expertise In Building Great Products From Scratch.</h1>
             </div>
           </div>
         </div>

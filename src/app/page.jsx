@@ -18,58 +18,58 @@ export default function Home() {
   useEffect(() => {
     const count = setInterval(() => {
       if (counter < 100) {
-        setCounter(counter + 1);
+        setCounter(counter + 3);
         clearInterval(count);
       } else {
         setCounter(100);
         clearInterval(count);
       }
-    }, 10);
+    }, 6);
   });
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
       // Loading Animation...
       const t1 = gsap.timeline();
-      t1.from(".follow", { width: "0%", duration: 2, ease: Power3.easeOut })
-        .to(".counter", { opacity: 0, duration: 0.7 })
+      t1.from(".follow", { width: "0%", duration: 1, ease: Power3.easeOut })
+        .to(".counter", { opacity: 0, duration: 0.4 })
         .to(".counter", { display: "none" })
         .to(".bar", { display: "none" })
         .to(
           ".follow",
-          { height: "100%", ease: Power3.easeOut, duration: 1 },
+          { height: "100%", ease: Power3.easeOut, duration: 0.5 },
           "-=.8"
         )
-        .to(".follow", { width: "0%", ease: Power3.easeOut, duration: 1 })
+        .to(".follow", { width: "0%", ease: Power3.easeOut, duration: 0.5 })
         .to(".anim", { display: "none" })
-        .from(".stars", { width: "0%", ease: Power3.easeOut, duration: 0.8 })
+        .from(".stars", { width: "0%", ease: Power3.easeOut, duration: 0.6 })
         .to(".page1", { css: { display: "block" } }, "-=.5")
         .from(".front", { y: 500, ease: Power3.easeOut, duration: 0.6 }, "-=.5")
         .from(".back", { y: 800, ease: Power3.easeOut, duration: 0.6 }, "-=.3")
         .from(
           ".planet1",
-          { x: 500, ease: Power3.easeOut, duration: 0.6 },
+          { x: 500, ease: Power3.easeOut, duration: 0.4 },
           "-=.3"
         )
         .from(
           ".planet2",
-          { x: -500, ease: Power3.easeOut, duration: 0.6 },
+          { x: -500, ease: Power3.easeOut, duration: 0.4 },
           "-=.3"
         )
         .from(
           ".rock1",
-          { y: -200, ease: Power3.easeOut, duration: 0.6 },
+          { y: -200, ease: Power3.easeOut, duration: 0.4 },
           "-=.3"
         )
-        .from(".rock2", { y: 350, ease: Power3.easeOut, duration: 0.6 }, "-=.3")
-        .from(".rock3", { x: 300, ease: Power3.easeOut, duration: 0.6 }, "-=.3")
+        .from(".rock2", { y: 350, ease: Power3.easeOut, duration: 0.4 }, "-=.3")
+        .from(".rock3", { x: 300, ease: Power3.easeOut, duration: 0.4 }, "-=.3")
         .from(
           ".typed",
-          { x: -500, opacity: 0, ease: Power3.easeOut, duration: 0.6 },
+          { x: -500, opacity: 0, ease: Power3.easeOut, duration: 0.4 },
           "-=.3"
         )
         .from(
           ".info",
-          { x: -700, opacity: 0, ease: Power3.easeOut, duration: 0.6 },
+          { x: -700, opacity: 0, ease: Power3.easeOut, duration: 0.4 },
           "-=.3"
         )
         .from(
@@ -77,15 +77,15 @@ export default function Home() {
           {
             x: -700,
             opacity: 0,
-            stagger: 0.2,
+            stagger: 0.15,
             ease: Power3.easeOut,
-            duration: 1,
+            duration: 0.7,
           },
           "-=.3"
         )
         .from(
           ".customShadow",
-          { x: 500, opacity: 0, ease: Power3.easeOut, duration: 1 },
+          { x: 500, opacity: 0, ease: Power3.easeOut, duration: 0.7 },
           "-=.3"
         )
         .from(".page2", { css: { display: "none" } }, "-=2");
@@ -184,8 +184,8 @@ export default function Home() {
               {/* Left Box start */}
               <div>
                 <h1 className="capitalize info lg:w-2/3 w-full text-white rounded p-3 backdrop-blur lg:my-10 my-2 lg:font-medium text-center md:text-lg text-xs bg-[#c2c2c24a]">
-                  Front-End Developer Who Writes Clean, Elegant and Efficient
-                  Code. <br />
+                  Full Stack Web Developer Who Writes Clean, Elegant and
+                  Efficient Code. <br />
                   <br /> I'm probably the most passionate web developer you will
                   ever get to work with.If you have a great project that needs
                   some amazing skills, I'm your guy.I can create amazing
@@ -226,12 +226,13 @@ export default function Home() {
               </div>
               {/* Left Box End */}
               {/* Right Box Start */}
-              <div>
+              <div className="relative customShadow">
+                {/* <div className="blob absolute -z-10 top-10 left-0"></div> */}
                 <Image
-                  className="rounded-md mx-auto sm:w-[180px] md:w-[450px] lg:w-[650px] customShadow"
+                  className="rounded-full mx-auto sm:w-[180px] md:w-[450px] lg:w-[650px]"
                   width={300}
                   height={300}
-                  src="/yash.webp"
+                  src="/img_bg.png"
                   alt="Yash Singh"
                 />
               </div>
@@ -248,8 +249,8 @@ export default function Home() {
         <Portfolio />
       </div>
       <div className="page2">
-      <Projects/>
-      <Contact/>
+        <Projects />
+        <Contact />
       </div>
     </main>
   );
