@@ -79,7 +79,7 @@ const Contact = () => {
       onSubmit: async (values, action) => {
         emailjs
           .sendForm(
-            "service_gxm49ge",
+            process.env.NEXT_PUBLIC_EMAIL_KEY,
             "template_hr64q6m",
             form.current,
             "pLJS6d0WCzJXu3_og"
@@ -112,7 +112,7 @@ const Contact = () => {
           );
         const { name, email, message } = values;
         await fetch(
-          "https://my-portfolio-48891-default-rtdb.firebaseio.com/contactlist.json",
+          process.env.NEXT_PUBLIC_FIREBASE,
           {
             method: "POST",
             headers: {
