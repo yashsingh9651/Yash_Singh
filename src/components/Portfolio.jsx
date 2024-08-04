@@ -155,7 +155,7 @@ const Portfolio = () => {
             </h1>
             <div className="text-[10px] md:text-2xl md:font-medium">
               <h1 className="text">Currently Living In Greator Noida, Uttar Pradesh India.</h1> 
-              <h1 className="text">Having 10 Months Of Experience In Full Stack Web Development.</h1>
+              <h1 className="text">Having 2 Years Of Experience In Full Stack Web Development.</h1>
               <h1 className="text">I Mostly Work With Java Script And Its Framework React Js(Next.js).</h1>
               <h1 className="text">I Have Good Expertise In Building Great Products From Scratch.</h1>
             </div>

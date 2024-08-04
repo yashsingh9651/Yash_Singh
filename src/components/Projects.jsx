@@ -104,11 +104,11 @@ const Projects = () => {
             {/* First Project */}
             <div className="relative w-[300px] h-[250px] sm:w-[250px] sm:h-[150px] md:w-[400px] md:h-[300px] rounded-lg box">
               <div className="w-full h-full glass rounded-lg p-3 flex flex-col items-center justify-between text-purple-500">
-                <h1 className="text-lg sm:text-sm md:text-lg font-medium underline underline-offset-4 text-center mb-4">Stock Management & Billing</h1>
-                <h2 className="capitalize text-base sm:text-xs md:text-base">Easiest Way to manage your stocks and billing details.You can also print the bills.used mongoDB atlas for the database.</h2>
+                <h1 className="text-lg sm:text-sm md:text-lg font-medium underline underline-offset-4 text-center mb-4">Stock Management & Invoicing</h1>
+                <h2 className="capitalize text-base sm:text-xs md:text-base">Easiest Way to manage your stocks and billing details.You can also print the bills.used mongoDB for the database.</h2>
                 <div className="flex justify-between gap-5 text-3xl sm:text-xl md:text-3xl items-center mb-2 text-black">
-                  <Link target="_blank" href="https://github.com/yashsingh9651/Stock_Management"><BsGithub/></Link>
-                  <Link target="_blank" href="https://akanksha-enterprises.vercel.app/"><BsArrowsFullscreen/></Link>
+                  {/* <Link target="_blank" href="https://github.com/yashsingh9651/Stock_Management"><BsGithub/></Link> */}
+                  <Link target="_blank" href="https://enterprise.yashks.me"><BsArrowsFullscreen/></Link>
                 </div>
               </div>
               <Image
@@ -122,11 +122,11 @@ const Projects = () => {
             {/* Second Project */}
             <div className="relative w-[300px] h-[250px] sm:w-[250px] sm:h-[150px] md:w-[400px] md:h-[300px] rounded-lg box">
               <div className="w-full h-full glass rounded-lg p-3 flex flex-col items-center justify-between text-slate-600">
-                <h1 className="text-lg sm:text-sm md:text-lg font-medium underline underline-offset-4 text-center mb-4">Clone of Kanban Borad(JIRA)</h1>
-                <h2 className="capitalize text-base sm:text-xs md:text-base">Clone of jira kanban board. by this you can assign tasks to different workers and workers can also confirms after the completion of task .</h2>
+                <h1 className="text-lg sm:text-sm md:text-lg font-medium underline underline-offset-4 text-center mb-4">Hackathon Official Website</h1>
+                <h2 className="capitalize text-base sm:text-xs md:text-base">I worked as a team lead and guided the teammates for better UI/UX design in creating DEXTERIX 4.0 official hackathon website</h2>
                 <div className="flex justify-between gap-5 text-3xl sm:text-xl md:text-3xl items-center mb-2 text-black">
-                  <Link target="_blank" href="https://github.com/yashsingh9651/kanban-board"><BsGithub/></Link>
-                  <Link target="_blank" href="https://yashsingh9651.github.io/kanban-board/"><BsArrowsFullscreen/></Link>
+                  <Link target="_blank" href="https://github.com/technojam/4.0"><BsGithub/></Link>
+                  <Link target="_blank" href="https://dexterix.technojam.in"><BsArrowsFullscreen/></Link>
                 </div>
               </div>
               <Image
@@ -140,18 +140,18 @@ const Projects = () => {
             {/* Third Project */}
             <div className="relative w-[300px] h-[250px] sm:w-[250px] sm:h-[150px] md:w-[400px] md:h-[300px] rounded-lg box">
               <div className="w-full h-full glass rounded-lg p-3 flex flex-col items-center justify-between text-white">
-                <h1 className="text-lg sm:text-sm md:text-lg font-medium underline underline-offset-4 text-center mb-4">Iron Paradise Gym</h1>
-                <h2 className="capitalize text-base sm:text-xs md:text-base">Now you can see our gym in your devices and also ask the query. choose best plan for yourself.</h2>
+                <h1 className="text-lg sm:text-sm md:text-lg font-medium underline underline-offset-4 text-center mb-4">SecreIPDATA</h1>
+                <h2 className="capitalize text-base sm:text-xs md:text-base">A frontend website created for a client who provides ip services.</h2>
                 <div className="flex justify-between gap-5 text-3xl sm:text-xl md:text-3xl items-center mb-2 text-black">
-                  <Link target="_blank" href="https://github.com/yashsingh9651/IronParadise"><BsGithub/></Link>
-                  <Link target="_blank" href="https://yashsingh9651.github.io/IronParadise/"><BsArrowsFullscreen/></Link>
+                  {/* <Link target="_blank" href="https://github.com/yashsingh9651/IronParadise"><BsGithub/></Link> */}
+                  <Link target="_blank" href="https://secureipdata.com/"><BsArrowsFullscreen/></Link>
                 </div>
               </div>
               <Image
                 width={1000}
                 height={1000}
                 alt="project"
-                src="/gym.jpg"
+                src="/client.jpg"
                 className="img w-full rounded-lg h-full object-cover"
               ></Image>
             </div>
