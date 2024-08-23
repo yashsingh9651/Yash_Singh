@@ -166,7 +166,7 @@ export default function Home() {
           {/* Content Box Starts */}
           <div className="md:w-4/5 w-[96%] md:mt-40 mt-20 sm:mt-4 mx-auto relative z-50">
             {/* Type Writter Effect Starts */}
-            <div className="flex uppercase text-xl md:text-4xl font-medium typed">
+            <div className="flex uppercase text-xl md:text-4xl font-medium typed text-white">
               <h1>i am &nbsp;</h1>
               <h1 className={`${tiltPrism.className} text-purple-500`}>
                 <Typewriter
@@ -227,7 +227,6 @@ export default function Home() {
               {/* Left Box End */}
               {/* Right Box Start */}
               <div className="relative customShadow">
-                {/* <div className="blob absolute -z-10 top-10 left-0"></div> */}
                 <Image
                   className="rounded-full mx-auto sm:w-[180px] md:w-[450px] lg:w-[650px]"
                   width={300}

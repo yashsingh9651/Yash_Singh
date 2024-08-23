@@ -133,7 +133,7 @@ const Portfolio = () => {
           alt=""
         />
       </section>
-      <div ref={page2} className="h-screen relative p-3 z-50">
+      <div ref={page2} className="h-screen relative p-3 z-50 text-white">
         <div className="flex justify-start bg-[rgba(255,255,255,0.06)] border border-[#ffffff42] backdrop-blur rounded p-1">
           <div className="image w-[200px] sm:w-[100px] md:w-[300px]">
             <Image

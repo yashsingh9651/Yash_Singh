@@ -98,7 +98,7 @@ const Projects = () => {
           className="w-full h-full object-cover z-0 absolute"
           alt=""
         />
-          <h1 className="uppercase text-2xl lg:text-5xl absolute top-10 sm:top-4 md:top-10 z-50 proHead">Top Projects</h1>
+          <h1 className="uppercase text-2xl lg:text-5xl absolute top-10 sm:top-4 md:top-10 z-50 proHead text-white">Top Projects</h1>
         <div className="relative z-40 p-3 lg:p-0">
           <div className="max-w-fit lg:grid-cols-3 sm:grid-cols-2 md:grid-cols-1 grid-cols-1 lg:gap-14 gap-4 grid mt-20 sm:mt-10 md:mt-20 lg:mt-0">
             {/* First Project */}
@@ -108,7 +108,7 @@ const Projects = () => {
                 <h2 className="capitalize text-base sm:text-xs md:text-base">Easiest Way to manage your stocks and billing details.You can also print the bills.used mongoDB for the database.</h2>
                 <div className="flex justify-between gap-5 text-3xl sm:text-xl md:text-3xl items-center mb-2 text-black">
                   {/* <Link target="_blank" href="https://github.com/yashsingh9651/Stock_Management"><BsGithub/></Link> */}
-                  <Link target="_blank" href="https://enterprise.yashks.me"><BsArrowsFullscreen/></Link>
+                  <Link target="_blank" href="https://akankshaenterprises.xyz"><BsArrowsFullscreen/></Link>
                 </div>
               </div>
               <Image
